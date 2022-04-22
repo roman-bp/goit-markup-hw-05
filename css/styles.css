@@ -780,7 +780,12 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(85, 85, 85, 0.85);
+    transition: opacity 750ms, visibility 1300ms;
+}
 
+
+.backdrop.is-hidden .modal {
+    transform: translateX(-500%) scale(2.9)
 }
 
 .modal {
@@ -796,7 +801,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    transition: transform 700ms;
 }
 
 .modal-close {
@@ -811,6 +816,7 @@ img {
     border-radius: 50%;
     width: 30px;
     height: 30px;
+
 
 }
 
