@@ -142,6 +142,7 @@ img {
 .hhov:focus {
     color: var(--accent-color);
 
+
 }
 
 .header-logo {
@@ -200,7 +201,9 @@ img {
 
 }
 
-
+.current {
+    border-bottom: 5px var(--accent-color);
+}
 
 
 .header-addres-text:hover .adr-icon,
