@@ -21,6 +21,7 @@ html {
     --hero-bgc: #2F303A;
     --footer-bgc: #2F303A;
     --addres-color: rgba(255, 255, 255, 0.6);
+    --svg-color: #AFB1B8;
 }
 
 body {
@@ -223,6 +224,7 @@ img {
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
+    margin-bottom: -1px;
 
 
 }
@@ -456,15 +458,16 @@ img {
 }
 
 .soc-cont-link {
+    color: var(--svg-color);
     width: 44px;
     height: 44px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-radius 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 
 }
@@ -472,13 +475,13 @@ img {
 .soc-cont-link:hover,
 .soc-cont-link:focus {
     background-color: var(--accent-color);
-    fill: currentColor;
+
 }
 
 .comand-soc-icon {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
 .comand-soc-icon.foot {
@@ -531,6 +534,7 @@ img {
     fill: #AFB1B8;
     width: 106px;
     height: 60px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -544,9 +548,7 @@ img {
     height: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-radius 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -680,9 +682,10 @@ img {
     background-color: var(--second-bgc);
     border-radius: 4px;
     padding: 6px 22px;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-radius 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -717,6 +720,7 @@ img {
 
 .pcard {
     display: inline-block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pcard:focus,
@@ -765,7 +769,8 @@ img {
 
 }
 
-.firm:hover .portf-overlay {
+.pcard:focus .portf-overlay,
+.pcard:hover .portf-overlay {
     transform: translateY(0);
 }
 
@@ -811,6 +816,7 @@ img {
 }
 
 .modal {
+
     position: absolute;
     width: 528px;
     min-height: 581px;
@@ -827,6 +833,7 @@ img {
 }
 
 .modal-close {
+    cursor: pointer;
     position: absolute;
     top: 8px;
     right: 8px;
